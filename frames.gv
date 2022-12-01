@@ -1,0 +1,13 @@
+digraph G {
+"odom" -> "axis"[label=" Broadcaster: default_authority\nAverage rate: 30.196\nBuffer length: 5.034\nMost recent transform: 1668695244.973617\nOldest transform: 1668695239.939893\n"];
+"rod" -> "box"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"head" -> "rod"[label=" Broadcaster: default_authority\nAverage rate: 15.199\nBuffer length: 5.0\nMost recent transform: 1668695244.973617\nOldest transform: 1668695239.973328\n"];
+"axis" -> "leg1"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"axis" -> "leg2"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"body" -> "head"[label=" Broadcaster: default_authority\nAverage rate: 15.199\nBuffer length: 5.0\nMost recent transform: 1668695244.973617\nOldest transform: 1668695239.973328\n"];
+"axis" -> "body"[label=" Broadcaster: default_authority\nAverage rate: 15.199\nBuffer length: 5.0\nMost recent transform: 1668695244.973617\nOldest transform: 1668695239.973328\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1668695245.0012977"[ shape=plaintext ] ;
+}->"odom";
+}
